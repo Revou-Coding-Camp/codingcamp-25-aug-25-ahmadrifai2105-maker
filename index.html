@@ -8,18 +8,107 @@
 
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
 
     <!-- Header content -->
-    <header></header>
+    <header class="main-header pb-[8px] px[4px]">
+        <!--Icon-->
+        <div class="logo"></div>
+
+        <!-- Navbar -->
+        <nav class="flex">
+            <a href="#home-page" class="border p-[4px]">Home</a>
+            <a href="#our-profile" class="border p-[4px]">Our Profile</a>
+            <a href="#portofolio" class="border p-[4px]">portofolio</a>
+            <a href="#Gallery" class="border p-[4px]">gallery</a>
+            <a href="#Message-us" class="border p-[4px]">Message Us</a>
+        </nav>
+    </header>
+
+    <hr />
 
     <!-- Main content -->
-    <main></main>
+    <main>
+
+        <!-- Home -->
+        <section id="home-page" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Welcome <span id="username"></span> to our website
+                </h2>
+            </header>
+
+            <p class="text-center">
+                we are a company that provides services in the field of web development, mobile application development, and digital marketing. We have a team of experienced professionals who are ready to help you achieve your business goals.
+            </p>
+        </section>    
+
+        <hr/>
+
+        <!-- Our Profile -->
+        <section id="our-profile" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Our Profile
+                </h2>
+            </header>
+        </section>
+
+        <hr/>
+
+        <!-- Portofolio -->
+        <section id="portofolio" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Portofolio
+                </h2>
+            </header>
+        </section>
+
+        <hr/>
+
+        <!-- Gallery -->
+        <section id="Gallery" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Gallery
+                </h2>
+            </header>
+        </section>
+
+        <hr/>
+
+        <!-- Message Us -->
+        <section id="Message-us" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Message Us
+                </h2>
+            </header>
+
+            <form class="px-[16px]">
+                <label for="name-input" class="block py-[8px]">
+                    Name:
+                    <input type="text" id="name-input" class="border p-[4px] w-full" required>
+                </label>
+
+                <button type="button" onclick="validateForm();" class="border p-[4px] rounded mt-[8px]">Send Message</button>
+            </form>
+        </section> 
+
+    </main>    
+
+    <hr />
 
     <!-- Footer content -->
-    <footer></footer>
+    <footer class="text-center">
+        <p>&copy; 2025 Rifai Company. All rights reserved.</p>
+    </footer>
     
     <!-- JS external file -->
     <script src="JS/script.js"></script>
